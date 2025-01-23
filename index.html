@@ -3,59 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parallax Example</title>
+  <title>QTest - Главная</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Шапка -->
-  <header>
-    <div class="container">
-      <nav>
-        <ul>
-            <li><a href="#section1">Главная</a></li>
-            <li><a href="about.html">О программе</a></li>
-            <li><a href="#download">Скачать</a></li>
-            <li><a href="#support">Поддержка</a></li>
-        </ul>
-      </nav>
-      <div class="auth-icon">
-        <a href="/login">Кабинет</a>
-      </div>
-    </div>
-  </header>
+    <header>
+        <div class="container">
+          <nav>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="about.html">О программе</a></li>
+              <li><a href="#download">Скачать</a></li>
+              <li><a href="#support">Поддержка</a></li>
+            </ul>
+          </nav>
+          <div class="auth-icon">
+            <a href="/login">Кабинет</a>
+          </div>
+        </div>
+      </header>
 
   <!-- Первый параллакс-блок -->
-  <div class="parallax-section parallax1" id="section1"></div>
-  
+  <div class="parallax-section parallax1" id="section1">
+    <div class="parallax-content">
+      <h1>Добро пожаловать на QTest</h1>
+      <p>Платформа для автоматизации тестирования и оценки знаний. Удобный инструмент для преподавателей и студентов.</p>
+    </div>
+  </div>
+
   <!-- Контентный блок -->
   <div class="content-section">
-    <h1>Добро пожаловать!</h1>
-    <p>Просматривайте успеваемость ваших студентов на удобной платформе.</p>
-    <div>
-        <h1>Заголовок H1</h1>
-        <p class="text-16">Маленький текст размером 16px</p>
-        <p class="text-20">Текст размером 20px</p>
-        <h4>Заголовок H4</h4>
-        <h2 class="h2-large">Большой H2</h2>
-        <h2 class="h2-small">Меньший H2</h2>
-        <h4 class="h4-alt">Альтернативный стиль H4</h4>
-        <h3>Заголовок H3</h3>
-      </div>
+    <h2>Возможности QTest</h2>
+    <ul>
+      <li>Автоматическая проверка тестов</li>
+      <li>Контроль за успеваемостью студентов</li>
+      <li>Удобный интерфейс для добавления тестов</li>
+      <li>Анализ прогресса студентов</li>
+    </ul>
   </div>
 
   <!-- Второй параллакс-блок -->
-  <div class="parallax-section parallax2" id="section2"></div>
-  
+  <div class="parallax-section parallax2" id="section2">
+    <div class="parallax-content">
+      <h2>Как это работает?</h2>
+      <div class="steps">
+        <div>
+          <h3>1. Создайте тест</h3>
+          <p>Добавьте задания, установите баллы и сроки выполнения.</p>
+        </div>
+        <div>
+          <h3>2. Пригласите студентов</h3>
+          <p>Студенты проходят тест и получают результаты в реальном времени.</p>
+        </div>
+        <div>
+          <h3>3. Анализируйте результаты</h3>
+          <p>Получите подробный анализ успеваемости группы.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Контентный блок -->
   <div class="content-section">
-    <h1>Эффективность работы</h1>
-    <p>Система тестов и оценок помогает улучшить процесс обучения.</p>
+    <h2>Наши достижения</h2>
+    <div class="stats-grid">
+      <div>
+        <h3>500+</h3>
+        <p>Проверенных тестов</p>
+      </div>
+      <div>
+        <h3>1000+</h3>
+        <p>Удовлетворённых студентов</p>
+      </div>
+      <div>
+        <h3>50+</h3>
+        <p>Преподавателей</p>
+      </div>
+    </div>
   </div>
 
   <!-- Подвал -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 Личный кабинет преподавателя. Все права защищены.</p>
+      <p>&copy; 2025 QTest. Все права защищены.</p>
       <p><a href="#section1">Наверх</a></p>
     </div>
   </footer>
