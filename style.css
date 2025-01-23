@@ -1,142 +1,176 @@
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    scroll-behavior: smooth;
-    color: #333333;
-    padding-top: 80px; /* Отступ для фиксированной шапки */
-  }
-  
-  /* Шапка */
-  header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 80px; /* Фиксированная высота */
-    background-color: rgba(60, 77, 139, 0.95); /* Полупрозрачный фон */
-    color: white;
-    z-index: 10;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-  }
-  
-  /* Контейнер для шапки */
-  header .container {
-    display: flex; /* Flexbox для распределения элементов */
-    align-items: center; /* Выравнивание по вертикали */
-    justify-content: space-between; /* Пространство между элементами */
-    padding: 0 20px;
-    height: 100%; /* Высота контейнера равна высоте шапки */
-  }
-  
-  /* Навигация */
-  header nav ul {
-    list-style: none;
-    display: flex; /* Горизонтальная навигация */
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  header nav ul li a:hover {
-    color: #FFD700; /* Золотой цвет при наведении */
-  }
-  
-  /* Иконка "Кабинет" */
-  .auth-icon a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 8px 15px;
-    border: 2px solid white;
-    border-radius: 5px;
-    font-size: 1.1em;
-    transition: all 0.3s ease;
-  }
-  
-  .auth-icon a:hover {
-    background-color: #FFD700;
-    color: #3C4D8B;
-  }
-  
-  /* Параллакс */
-  .parallax-section {
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .parallax1 {
-    background-image: url('image/img1.webp'); /* Первый параллакс-фон */
-  }
-  
-  .parallax2 {
-    background-image: url('image/imgHeader.webp'); /* Второй параллакс-фон */
-  }
-  
-  .parallax-content {
-    position: relative;
-    text-align: center;
-    color: white;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для читаемости текста */
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  /* Контент */
-  .content-section {
-    padding: 50px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
-    border-radius: 10px;
-    margin: 20px;
-  }
-  
-  .content-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .content-section ul li {
-    font-size: 1.2em;
-    margin: 10px 0;
-  }
-  
-  /* Подвал */
-  footer {
-    background-color: #3C4D8B; /* Тёмно-синий фон */
-    color: #FFFFFF; /* Белый текст */
-    padding: 20px 10px;
-    text-align: center;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
-  }
-  
-  footer a {
-    color: #FFD700; /* Золотой цвет ссылок */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  footer a:hover {
-    color: #FFA500; /* Оранжевый цвет при наведении */
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  color: #333333;
+  background-color: #ffffff; /* Фон для светлой темы */
+  padding-top: 80px; /* Отступ для фиксированной шапки */
+}
 
+body.dark-theme {
+  background-color: #121212; /* Тёмный фон */
+  color: #e0e0e0; /* Светлый текст */
+}
 
+/* Шапка */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgba(60, 77, 139, 0.95); /* Фон шапки светлой темы */
+  color: white;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between; /* Пространство между блоками */
+  align-items: center;
+  padding: 0 20px;
+}
 
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Пространство между элементами слева и справа */
+  padding: 0 20px;
+  height: 100%;
+}
 
+body.dark-theme header {
+  background-color: rgba(20, 20, 20, 0.95); /* Тёмная шапка */
+}
 
+/* Навигация */
+header nav ul {
+  list-style: none;
+  display: flex; /* Горизонтальная навигация */
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
 
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #FFD700; /* Золотой цвет при наведении */
+}
+
+body.dark-theme header nav ul li a {
+  color: #e0e0e0;
+}
+
+header .right-container {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Расстояние между кнопкой и иконкой */
+  justify-content: flex-end; /* Размещение элементов справа */
+}
+
+.auth-icon a {
+  display: inline-block; /* Указываем, что это блочный элемент */
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: all 0.3s ease, transform 0.3s ease;
+}
+
+.auth-icon a:hover {
+  background-color: #FFD700;
+  color: #3C4D8B;
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.theme-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.theme-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Параллакс */
+.parallax-section {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax1 {
+  background-image: url('image/img1.webp');
+}
+
+.parallax2 {
+  background-image: url('image/imgHeader.webp');
+}
+
+body.dark-theme .parallax1,
+body.dark-theme .parallax2 {
+  filter: brightness(0.7);
+}
+
+.parallax-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Контент */
+.content-section {
+  padding: 50px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  margin: 20px;
+}
+
+body.dark-theme .content-section {
+  background-color: rgba(40, 40, 40, 0.9);
+}
+
+/* Подвал */
+footer {
+  background-color: #3C4D8B;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-theme footer {
+  background-color: #1A1A1A;
+  color: #e0e0e0;
+}
+
+footer a {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #FFA500;
+}
 
