@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация QTest</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+  <header>
+    <h2>QTest</h2>
+  </header>
+
+  <main class="register-container">
+    <form action="auth.html" method="post">
+      <h3>Регистрация преподавателя</h3>
+      <label for="first-name">Имя</label>
+      <input type="text" id="first-name" name="first-name" placeholder="Введите ваше имя" required>
+
+      <label for="last-name">Фамилия</label>
+      <input type="text" id="last-name" name="last-name" placeholder="Введите вашу фамилию" required>
+
+      <label for="middle-name">Отчество</label>
+      <input type="text" id="middle-name" name="middle-name" placeholder="Введите ваше отчество">
+
+      <label for="birth-date">Дата рождения</label>
+      <input type="date" id="birth-date" name="birth-date" required>
+
+      <label for="school">Преподаваемая школа</label>
+      <input type="text" id="school" name="school" placeholder="Введите название школы" required>
+
+      <label for="phone">Телефон</label>
+      <input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона" required>
+
+      <label for="email">Электронная почта</label>
+      <input type="email" id="email" name="email" placeholder="Введите вашу почту" required>
+
+      <label for="password">Пароль</label>
+      <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+
+      <label for="confirm-password">Повторите пароль</label>
+      <input type="password" id="confirm-password" name="confirm-password" placeholder="Повторите пароль" required>
+
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 QTest. Все права защищены.</p>
+  </footer>
+</body>
+</html>

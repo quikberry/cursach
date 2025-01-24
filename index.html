@@ -4,94 +4,108 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QTest - Главная</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="image/titleLogo.png" type="image/png">
 </head>
 <body>
   <header>
     <div class="container">
+      <a href="index.html">
+        <img src="image/logo.png" alt="QTest Logo" class="logo">
+      </a>
       <nav>
         <ul>
-          <li><a href="index.html">Главная</a></li>
           <li><a href="about.html">О программе</a></li>
-          <li><a href="#download">Скачать</a></li>
-          <li><a href="#support">Поддержка</a></li>
+          <li><a href="support.html">Поддержать</a></li>
+          <li><a href="download.html">Скачать</a></li>
+          <li><a href="login.html">Личный кабинет</a></li>
         </ul>
       </nav>
-      <div class="right-container">
-        <a href="dark-index.html">
-          <img src="image/darkTheme.webp" alt="Тёмная тема" class="theme-icon">
-        </a>
-        <div class="auth-icon">
-          <a href="/login">Кабинет</a>
-        </div>
-      </div>
     </div>
   </header>
 
-  <!-- Первый параллакс-блок -->
-  <div class="parallax-section parallax1" id="section1">
-    <div class="parallax-content">
-      <h1>Добро пожаловать на QTest</h1>
-      <p>Платформа для автоматизации тестирования и оценки знаний. Удобный инструмент для преподавателей и студентов.</p>
-    </div>
-  </div>
-
-  <!-- Контентный блок -->
-  <div class="content-section">
-    <h2>Возможности QTest</h2>
-    <ul>
-      <li>Автоматическая проверка тестов</li>
-      <li>Контроль за успеваемостью студентов</li>
-      <li>Удобный интерфейс для добавления тестов</li>
-      <li>Анализ прогресса студентов</li>
-    </ul>
-  </div>
-
-  <!-- Второй параллакс-блок -->
-  <div class="parallax-section parallax2" id="section2">
-    <div class="parallax-content">
-      <h2>Как это работает?</h2>
-      <div class="steps">
-        <div>
-          <h3>1. Создайте тест</h3>
-          <p>Добавьте задания, установите баллы и сроки выполнения.</p>
-        </div>
-        <div>
-          <h3>2. Пригласите студентов</h3>
-          <p>Студенты проходят тест и получают результаты в реальном времени.</p>
-        </div>
-        <div>
-          <h3>3. Анализируйте результаты</h3>
-          <p>Получите подробный анализ успеваемости группы.</p>
-        </div>
+  <main>
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="hero-content">
+          <h1>Добро пожаловать на QTest</h1>
+          <p>Эффективное управление тестированием студентов и анализ успеваемости.</p>
+          <a href="#" class="cta-button">Начать бесплатно</a>
       </div>
-    </div>
+  </section>
+
+  <div class="features-container">
+    <img src="image/left.png" alt="Декоративное изображение слева" class="decorative-img left">
+    
+    <section class="features">
+      <h2>Возможности QTest</h2>
+      <ul>
+        <li>
+          <span>✅</span> Автоматическая проверка тестов
+        </li>
+        <li>
+          <span>📊</span> Контроль за успеваемостью студентов
+        </li>
+        <li>
+          <span>🛠</span> Удобный интерфейс для добавления тестов
+        </li>
+        <li>
+          <span>📈</span> Анализ прогресса студентов
+        </li>
+      </ul>
+    </section>
+    
+    <img src="image/right.png" alt="Декоративное изображение справа" class="decorative-img right">
   </div>
 
-  <!-- Контентный блок -->
-  <div class="content-section">
-    <h2>Наши достижения</h2>
-    <div class="stats-grid">
-      <div>
+  <section class="statistics">
+    <div class="stat-container">
+      <div class="stat">
         <h3>500+</h3>
         <p>Проверенных тестов</p>
       </div>
-      <div>
+    </div>
+    <div class="stat-container">
+      <div class="stat">
         <h3>1000+</h3>
-        <p>Удовлетворённых студентов</p>
+        <p>Аттестованных учеников</p>
       </div>
-      <div>
+    </div>
+    <div class="stat-container">
+      <div class="stat">
         <h3>50+</h3>
         <p>Преподавателей</p>
       </div>
     </div>
-  </div>
+  </section>
+  </main>
 
-  <!-- Подвал -->
+  
+
   <footer>
-    <div class="container">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h3>Контакты</h3>
+        <p><strong>Штаб-квартира:</strong> Ул. Бориса Галушкина 9</p>
+        <p><strong>Телефон:</strong> <a href="tel:+79042400513">+7 (904) 240-05-13</a></p>
+      </div>
+      <div class="footer-social">
+        <h3>Мы в сетях:</h3>
+        <div class="social-icons">
+          <a href="https://t.me/foxiezi" target="_blank">
+            <img src="image/telegramLogo.png" alt="Telegram" class="footer-icon">
+          </a>
+          <a href="https://vk.com/quikberry" target="_blank">
+            <img src="image/vkLogo.png" alt="VK" class="footer-icon">
+          </a>
+          <a href="https://instagram.com/quikberry_" target="_blank">
+            <img src="image/instLogo.png" alt="Instagram" class="footer-icon">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copy">
       <p>&copy; 2025 QTest. Все права защищены.</p>
-      <p><a href="#section1">Наверх</a></p>
     </div>
   </footer>
 </body>

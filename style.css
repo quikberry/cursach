@@ -174,3 +174,61 @@ footer a:hover {
   color: #FFA500;
 }
 
+.content-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3C4D8B; /* Приятный синий цвет */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.content-section ul {
+  list-style-type: none; /* Убираем стандартные маркеры */
+  padding: 0;
+  text-align: center; /* Центрируем текст */
+}
+
+.content-section ul li {
+  font-size: 1.2rem;
+  color: #333333;
+  background-color: rgba(60, 77, 139, 0.1); /* Лёгкий синий фон */
+  padding: 10px 20px;
+  margin: 10px auto; /* Отступы между элементами */
+  border-radius: 8px;
+  max-width: 600px; /* Ограничиваем ширину */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Добавляем лёгкую тень */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
+}
+
+.content-section ul li:hover {
+  transform: scale(1.05); /* Увеличиваем элемент при наведении */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Увеличиваем тень */
+  background-color: rgba(60, 77, 139, 0.2); /* Чуть ярче фон при наведении */
+}
+
+body.dark-theme .content-section ul li {
+  font-size: 1.2rem;
+  color: #ffffff; /* Максимально яркий белый текст */
+  background-color: rgba(40, 40, 40, 0.9); /* Тёмный фон карточек */
+  padding: 10px 20px;
+  margin: 10px auto;
+  border-radius: 8px;
+  max-width: 600px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+body.dark-theme .content-section ul li:hover {
+  transform: scale(1.05); /* Увеличиваем карточку при наведении */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Более глубокая тень */
+  background-color: rgba(60, 60, 60, 1); /* Более светлый фон карточки при наведении */
+}
+
+body.dark-theme .parallax1 .parallax-content h1,
+body.dark-theme .parallax1 .parallax-content p {
+  color: #ffffff; /* Яркий белый текст */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Тень для лучшей читаемости */
+}
+
+
+

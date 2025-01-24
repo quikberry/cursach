@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: url('image/gif1.gif') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+  }
+  
+  header {
+    width: 100%;
+    background-color: rgba(60, 77, 139, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+  }
+  
+  header h2 {
+    color: white;
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  main.login-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  form label {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="text"],
+  form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  form input:focus {
+    border-color: #3C4D8B;
+    outline: none;
+    box-shadow: 0 0 5px rgba(60, 77, 139, 0.5);
+  }
+  
+  form button {
+    background-color: #3C4D8B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #2b3a6d;
+  }
+  
+  form a {
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #3C4D8B;
+    font-size: 0.9em;
+  }
+  
+  form a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px 20px;
+    color: #3C4D8B;
+    font-size: 14px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  }
