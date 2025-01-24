@@ -11,26 +11,47 @@ body {
     justify-content: flex-start;
     min-height: 100vh;
   }
+
+  main {
+    flex: 1; 
+}
   
   header {
     width: 100%;
     background-color: rgba(60, 77, 139, 0.95);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     z-index: 10;
-  }
+}
+
+header .container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+header a {
+    text-decoration: none; 
+}
+
+header .logo {
+    width: 100px; 
+    height: auto; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+header .logo:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
   
-  header h2 {
-    color: white;
-    font-size: 1.5em;
-    margin: 0;
-    font-weight: bold;
-  }
   
   main.login-container {
     margin-top: 100px;
@@ -113,10 +134,85 @@ body {
   }
 
   footer {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #3C4D8B;
+    color: white;
+    padding: 5px 15px;
     text-align: center;
-    padding: 10px 20px;
-    color: #3C4D8B;
-    font-size: 14px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-  }
+    border-top: 3px solid #FFD700;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-info {
+    text-align: left;
+    flex: 1;
+}
+
+.footer-info h3 {
+    font-size: 0.9em;
+    margin-bottom: 3px;
+    color: #FFD700;
+}
+
+.footer-info p {
+    margin: 2px 0; 
+    font-size: 0.8em; 
+}
+
+.footer-info a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.85em;
+    transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+    color: #FFA500;
+}
+
+.footer-social {
+    text-align: right;
+    flex: 1;
+}
+
+.footer-social h3 {
+    font-size: 0.9em;
+    margin-bottom: 3px;
+    color: #FFD700;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px; 
+    margin-top: 3px;
+}
+
+.footer-icon {
+    width: 25px; 
+    height: 25px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer-copy {
+    margin-top: 3px;
+    font-size: 0.7em;
+    color: #ddd;
+}
