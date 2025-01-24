@@ -10,6 +10,10 @@ body {
     min-height: 100vh;
   }
 
+  main {
+    flex: 1; 
+}
+
   
   header {
     background-color: #3C4D8B;
