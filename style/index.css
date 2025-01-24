@@ -63,7 +63,7 @@ body {
   
   .hero {
     text-align: center;
-    background-image: url('image/img1.webp');
+    background-image: url('../image/img1.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
@@ -332,111 +332,48 @@ footer {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
 
-  @media (min-width: 1025px) {
-    .features-container {
-      flex-direction: row;
-    }
-  
-    .statistics {
-      justify-content: space-between;
-    }
-  
-    footer {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  }
-  
-  @media (max-width: 1024px) and (min-width: 481px) {
-    .features-container {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-  
-    .statistics {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-  
-    footer {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    footer .contact-info {
-      text-align: center;
-      margin-bottom: 10px;
+  @media (max-width: 1268px) {
+    
+    header .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
 
-    header {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-    
-      header .logo {
-        margin-bottom: 10px;
-      }
-    
-      header nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-      }
-  }
-  
-  @media (max-width: 480px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-      }
-    
-      header nav ul {
+    .logo {
+        height: 40px;
+    }
+
+    header nav ul {
         flex-direction: column;
         gap: 10px;
-      }
-    
-      header .logo {
-        width: 50px;
-        margin-bottom: 10px;
-      }
-    
-      header nav ul li a {
-        font-size: 14px;
-      }
-  
-    .hero {
-      padding: 50px 20px;
+        background-color: #3C4D8B;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
-  
-    .features-container {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
+
+    header nav ul.active {
+        display: flex;
     }
-  
-    .features li {
-      font-size: 1em;
-      padding: 8px 15px;
+
+
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        transition: color 0.3s ease;
     }
-  
-    .statistics {
-      flex-direction: column;
-      gap: 10px;
+    main {
+      padding-top: 40px;
     }
-  
-    footer {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+
+    .menu-toggle:hover {
+        color: #FFD700;
     }
-  
-    footer .social-icons {
-      justify-content: center;
-      margin-top: 10px;
-    }
-  }
+}
   
 
   

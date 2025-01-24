@@ -3,39 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Личный кабинет преподавателя</title>
-  <link rel="stylesheet" href="style.css">
+  <title>QTest - Главная</title>
+  <link rel="stylesheet" href="style/about.css">
+  <link rel="icon" href="image/titleLogo.png" type="image/png">
 </head>
 <body>
-  <!-- Шапка -->
   <header>
     <div class="container">
-      
+      <a href="index.html">
+        <img src="image/logo.png" alt="QTest Logo" class="logo">
+      </a>
       <nav>
         <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="about.html">О программе</a></li>
-            <li><a href="#download">Скачать</a></li>
-            <li><a href="#support">Поддержка</a></li>
+          <li><a href="about.html">О программе</a></li>
+          <li><a href="support.html">Поддержать</a></li>
+          <li><a href="download.html">Скачать</a></li>
+          <li><a href="login.html">Личный кабинет</a></li>
         </ul>
       </nav>
-      <div class="auth-icon">
-        <a href="/login">Кабинет</a>
-      </div>
     </div>
   </header>
 
-  <!-- Контент -->
-  <main class="content-section">
-    <h1>Добро пожаловать!</h1>
-    <p>Этот файл — шаблон. Скопируйте его, чтобы создать новые страницы.</p>
-  </main>
+  <main>
+    <section class="about-container">
+        <section class="about-section">
+            <h1 class="about-header">О программе QTest</h1>
+            <p class="about-description">
+                QTest — это современная платформа для автоматизации процессов тестирования и оценки знаний студентов.
+                Разработанная специально для преподавателей и образовательных учреждений, QTest упрощает контроль
+                успеваемости и помогает анализировать образовательные результаты.
+            </p>
+        </section>
 
-  <!-- Подвал -->
+        <div class="features">
+            <h2>Основные возможности</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <span>✅</span>
+                    <p><strong>Автоматическая проверка тестов:</strong> система самостоятельно анализирует ответы студентов и оценивает их.</p>
+                </div>
+                <div class="feature-item">
+                    <span>📊</span>
+                    <p><strong>Контроль за успеваемостью студентов:</strong> отслеживайте прогресс учеников и выявляйте пробелы в знаниях.</p>
+                </div>
+                <div class="feature-item">
+                    <span>🛠</span>
+                    <p><strong>Удобный интерфейс для добавления тестов:</strong> создание и редактирование тестов занимают всего несколько минут.</p>
+                </div>
+                <div class="feature-item">
+                    <span>📈</span>
+                    <p><strong>Анализ прогресса студентов:</strong> подробные отчёты и статистика, которые помогут улучшить результаты группы.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="audience">
+            <h2>Для кого это?</h2>
+            <div class="audience-grid">
+                <div class="audience-item">
+                    <strong>Преподаватели:</strong>
+                    <p>Для эффективного контроля знаний студентов и экономии времени.</p>
+                </div>
+                <div class="audience-item">
+                    <strong>Студенты:</strong>
+                    <p>Для удобного прохождения тестов и получения мгновенной обратной связи.</p>
+                </div>
+                <div class="audience-item">
+                    <strong>Образовательные учреждения:</strong>
+                    <p>Для внедрения цифровых технологий в учебный процесс.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Личный кабинет преподавателя. Все права защищены.</p>
-      <p><a href="#top">Наверх</a></p>
+    <div class="footer-container">
+      <div class="footer-info">
+        <h3>Контакты</h3>
+        <p><strong>Штаб-квартира:</strong> Ул. Бориса Галушкина 9</p>
+        <p><strong>Телефон:</strong> <a href="tel:+79042400513">+7 (904) 240-05-13</a></p>
+      </div>
+      <div class="footer-social">
+        <h3>Мы в сетях:</h3>
+        <div class="social-icons">
+          <a href="https://t.me/foxiezi" target="_blank">
+            <img src="image/telegramLogo.png" alt="Telegram" class="footer-icon">
+          </a>
+          <a href="https://vk.com/quikberry" target="_blank">
+            <img src="image/vkLogo.png" alt="VK" class="footer-icon">
+          </a>
+          <a href="https://instagram.com/quikberry_" target="_blank">
+            <img src="image/instLogo.png" alt="Instagram" class="footer-icon">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>&copy; 2025 QTest. Все права защищены.</p>
     </div>
   </footer>
 </body>
