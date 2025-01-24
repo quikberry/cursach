@@ -293,7 +293,7 @@ footer {
     border: 2px solid #dcdcdc; 
     border-radius: 15px; 
     padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, font-size 0.3s ease, box-shadow 0.3s ease;
     max-width: 300px; 
     height: 130px;
     margin: 0 90px;
@@ -365,9 +365,6 @@ footer {
         color: white;
         cursor: pointer;
         transition: color 0.3s ease;
-    }
-    main {
-      padding-top: 40px;
     }
 
     .menu-toggle:hover {
