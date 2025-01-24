@@ -208,6 +208,22 @@ footer {
   transform: scale(1.05);
 }
 
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-container iframe {
+  border: none;
+  border-radius: 10px;
+}
+
 @media (max-width: 1268px) {
     body {
         margin-top: 60px; 

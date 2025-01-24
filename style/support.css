@@ -220,44 +220,84 @@ footer {
 
 
 
-  @media (max-width: 1268px) {
-    body {
-        margin-top: 60px; 
-      }
-    header .container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
+  @media (min-width: 1025px) {
+    .support-container {
+      padding: 40px;
     }
-
-    .logo {
-        height: 40px;
+  
+    .support-options {
+      justify-content: space-between;
+      gap: 20px;
     }
-
+  
+    .support-method {
+      min-width: 300px;
+      max-width: 400px;
+    }
+  }
+  
+  /* Настройки для планшетов (ширина экрана 768px - 1024px) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .support-container {
+      padding: 20px;
+    }
+  
+    .support-options {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .support-method {
+      width: 100%;
+      max-width: 600px;
+    }
+  
     header nav ul {
-        flex-direction: column;
-        gap: 10px;
-        background-color: #3C4D8B;
-        padding: 10px;
-        border-radius: 5px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      flex-direction: column;
+      gap: 10px;
     }
-
-    header nav ul.active {
-        display: flex;
+  }
+  
+  /* Настройки для мобильных устройств (ширина экрана до 767px) */
+  @media (max-width: 767px) {
+    body {
+      padding-top: 60px; /* Отступ для фиксированной шапки */
     }
-
-
-    .menu-toggle {
-        display: block;
-        font-size: 24px;
-        color: white;
-        cursor: pointer;
-        transition: color 0.3s ease;
+  
+    .support-container {
+      padding: 10px;
     }
-
-    .menu-toggle:hover {
-        color: #FFD700;
+  
+    .support-options {
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
     }
-}
+  
+    .support-method {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    header .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    footer {
+      font-size: 0.8em;
+      padding: 10px;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
