@@ -1,0 +1,364 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../image/teacherMoment.webp');
+    color: #333;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  
+  header {
+    background-color: #3C4D8B;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #FFD700;
+}
+
+footer {
+    background-color: #3C4D8B;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-top: 3px solid #FFD700;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .footer-info {
+    text-align: left;
+    flex: 1;
+  }
+  
+  .footer-info h3 {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #FFD700;
+  }
+  
+  .footer-info p {
+    margin: 5px 0;
+    font-size: 0.9em;
+  }
+  
+  .footer-info a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-info a:hover {
+    color: #FFA500;
+  }
+  
+  .footer-social {
+    text-align: right;
+    flex: 1;
+  }
+  
+  .footer-social h3 {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #FFD700;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  
+  .footer-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .footer-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .footer-copy {
+    margin-top: 5px;
+    font-size: 0.8em;
+    color: #ddd;
+  }
+
+  .auth-container {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .teacher-info h1 {
+    font-size: 2em;
+    color: #3C4D8B;
+  }
+  
+  .teacher-info p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+    color: #3C4D8B;
+  }
+  
+  td {
+    font-size: 0.9em;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .auth-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 100px auto 0;
+    max-width: 1200px;
+    gap: 20px;
+  }
+  
+  .teacher-info, .student-performance {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 48%;
+  }
+  
+  .teacher-photo {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .teacher-info h2, .student-performance h2 {
+    color: #3C4D8B;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .teacher-info p {
+    font-size: 1em;
+    color: #666;
+  }
+
+  .students-container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px;
+  }
+  
+  .students-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #3C4D8B;
+    text-align: center;
+  }
+  
+  .students-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .students-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .students-list li:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .student-name {
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .student-score {
+    font-size: 0.9em;
+    color: #3C4D8B;
+  }
+
+  .teacher-container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .teacher-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .teacher-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .teacher-container h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #3C4D8B;
+  }
+  
+  .teacher-container p {
+    font-size: 0.9em;
+    color: #555555;
+    margin: 5px 0;
+  }
+  
+  .teacher-container a {
+    color: #3C4D8B;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .teacher-container a:hover {
+    color: #FFD700;
+  }
+
+  @media (max-width: 1268px) {
+    body {
+        margin-top: 60px; 
+      }
+    header .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        background-color: #3C4D8B;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    header nav ul.active {
+        display: flex;
+    }
+
+
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+    .menu-toggle:hover {
+        color: #FFD700;
+    }
+}
+  
